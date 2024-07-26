@@ -1,0 +1,63 @@
+@import '../utilities/variables';
+
+footer {
+    background-image: url('../images/colorful-and-tasty-donuts-footer.png');
+    background-repeat: no-repeat;
+    background-position: bottom 17px left 50%;
+
+    @media screen and (min-width:768px) {
+        background-image: none;
+    }
+
+    .social-media {
+        width: 80px;
+        margin: 0 auto;
+
+    }
+
+    .info {
+        margin-top: 40px;
+        padding-bottom: 50px;
+        display: grid;
+        grid-template-columns: 126px 100px;
+        justify-content: space-between;
+
+        @media screen and (min-width:768px) {
+            margin-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        @media screen and (min-width:1200px) {
+            margin-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        &-item {
+            display: grid;
+            grid-template-columns: 13px auto;
+            column-gap: 4px;
+            align-items: center;
+            color: $main_text_color;
+
+            &:hover,
+            &:focus {
+                color: $button_color;
+            }
+
+        }
+
+        &-tel,
+        &-location {
+            font-size: 16px;
+            color: currentColor;
+        }
+
+        &-icon {
+            width: 13px;
+            height: 13px;
+            margin-right: 4px;
+            fill: currentColor;
+        }
+
+    }
+}

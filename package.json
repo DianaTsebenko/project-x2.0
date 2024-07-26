@@ -1,0 +1,28 @@
+{
+  "name": "project-x2.0",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://DianaTsebenko.github.io/project-x2.0",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /project-x2.0/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DianaTsebenko/project-x2.0.git"
+  },
+  "keywords": [],
+  "author": "Diana Tsebenko <cebenkodiana@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "modern-normalize": "^1.1.0",
+    "notiflix": "^3.2.7"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}

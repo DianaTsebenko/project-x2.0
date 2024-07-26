@@ -1,0 +1,70 @@
+@import './variables';
+
+body {
+    background-color: #FBFBFB;
+    font-family: $main_text;
+    color: $main_text_color;
+    line-height: 1.2;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+svg {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.text-left {
+    text-align: left;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-register,
+.btn-send {
+    display: block;
+    width: 145px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: $button_color;
+    border-color: transparent;
+    box-shadow: 10px 15px 25px 0px rgba(232, 183, 183, 0.45);
+    color: $white_text_color;
+
+    &:hover {
+        background-color: $white_text_color;
+        color: $button_color;
+        border: 1px solid $button_color;
+    }
+
+    &:focus {
+        box-shadow: 10px 15px 25px 0px rgba(232, 183, 183, 0.45), 0px 4px 4px 0px rgba(107, 66, 66, 0.25) inset;
+    }
+
+    .btn-text {
+        color: currentColor;
+        text-align: center;
+        font-size: 18px;
+    }
+}

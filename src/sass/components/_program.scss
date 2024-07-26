@@ -1,0 +1,54 @@
+.program-item {
+    display: grid;
+    grid-template-columns: 24px auto;
+    column-gap: 16px;
+    align-items: center;
+
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    &:last-child {
+        margin-bottom: 16px;
+    }
+}
+
+.prg-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.program-text {
+    font-size: 16px;
+}
+
+.program-subtitle {
+    margin-bottom: 8px;
+}
+
+.program_text {
+    font-family: $main_text;
+    font-size: 16px;
+    color: $main_text_color;
+    line-height: 1.21;
+    margin-left: auto;
+    margin-right: auto;
+
+    &.visible-text {
+        display: block;
+    }
+
+    &.hidden-text {
+        display: none;
+
+        @media screen and (min-width: 1200px) {
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 18px;
+        line-height: calc(21.94/18);
+    }
+}
