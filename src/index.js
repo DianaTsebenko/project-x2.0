@@ -41,11 +41,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!email || !question) {
       Notiflix.Notify.failure('Please fill in all fields.');
-    } else {
-      Notiflix.Notify.success(
-        'We will consider your question as soon as possible.'
-      );
-      form.reset();
+      return;
     }
+    Notiflix.Notify.success(
+      'We will consider your question as soon as possible.'
+    );
+    form.reset();
   });
 });
